@@ -2,7 +2,13 @@ package com.microservices.coderefer.mapper.provider;
 
 import org.apache.ibatis.jdbc.SQL;
 
-
+/**
+ * 
+* <p>Title: ReferCodeSqlProvider</p>  
+* <p>Description: </p>  
+* @author qiupengwei  
+* @date 2020年7月10日
+ */
 public class ReferCodeSqlProvider {
 
     private static final String TABLE_NAME = "T_REFER_CODE";
@@ -10,9 +16,9 @@ public class ReferCodeSqlProvider {
     /**
      * 查询代码表
      *  @Result(property = "bh", column = "c_bh"),
-            @Result(property = "lb", column = "c_lb"),
-            @Result(property = "dm", column = "c_dm"),
-            @Result(property = "mc", column = "c_mc"),
+        @Result(property = "lb", column = "c_lb"),
+        @Result(property = "dm", column = "c_dm"),
+        @Result(property = "mc", column = "c_mc"),
      * @return sql
      */
     public String listReferCode() {

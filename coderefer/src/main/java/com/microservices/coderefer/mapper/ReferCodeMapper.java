@@ -9,9 +9,21 @@ import org.apache.ibatis.annotations.SelectProvider;
 
 import com.microservices.coderefer.mapper.provider.ReferCodeSqlProvider;
 import com.microservices.coderefer.po.ReferCode;
-
+/**
+* <p>Title: ReferCodeMapper</p>  
+* <p>Description: </p>  
+* @author qiupengwei  
+* @date 2020年7月10日
+ */
 @Mapper
 public interface ReferCodeMapper   {
+	
+	
+	/**
+	 * <p>Title: listReferCode</p>  
+	 * <p>Description: </p>  
+	 * @return
+	 */
     @SelectProvider(type = ReferCodeSqlProvider.class, method = "listReferCode")
     @Results({
             @Result(property = "bh", column = "c_bh"),
