@@ -24,7 +24,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-         
+		
+		<dependency>
+           <groupId>com.github.pagehelper</groupId>
+           <artifactId>pagehelper</artifactId>
+           <version>4.1.4</version>
+        </dependency>
          <!--mybatis-plus自动的维护了mybatis以及mybatis-spring的依赖，
                           在springboot中这三者不能同时的出现，避免版本的冲突，表示：跳进过这个坑-->
          <dependency>
@@ -52,7 +57,17 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+		 <!-- aop 增强实现 -->
+		 <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+         </dependency>
+         <!-- 集合公用类 apche lang3 --> 
+         <dependency>
+           <groupId>org.apache.commons</groupId>
+           <artifactId>commons-lang3</artifactId>
+           <version>3.9</version>
+       </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

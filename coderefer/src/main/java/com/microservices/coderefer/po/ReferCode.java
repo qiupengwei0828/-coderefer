@@ -2,6 +2,8 @@ package com.microservices.coderefer.po;
 
 import java.util.Date;
 
+import com.microservices.coderefer.annotation.Code;
+
 import lombok.Data;
 /**
  * 
@@ -27,6 +29,7 @@ public class ReferCode {
 	/**
 	 * 名称
 	 */
+	@Code(type="name")
 	private String mc;
 	/***
 	 * 显示顺序
